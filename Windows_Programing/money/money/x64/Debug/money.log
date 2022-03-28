@@ -1,0 +1,4 @@
+﻿  money.cpp
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\money\money\money.cpp(5,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\money\money\money.cpp(12,2): error C2562: 'main': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\money\money\money.cpp(4): message : 'main' 선언을 참조하십시오.

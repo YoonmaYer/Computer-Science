@@ -1,0 +1,5 @@
+﻿  math.cpp.cpp
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\math.cpp\math.cpp\math.cpp.cpp(10,8): error C2059: 구문 오류: '{'
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\math.cpp\math.cpp\math.cpp.cpp(10,8): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\math.cpp\math.cpp\math.cpp.cpp(13,21): error C2059: 구문 오류: '<<'
+C:\Users\ASUS\Desktop\코딩\CS\Windows_Programing\math.cpp\math.cpp\math.cpp.cpp(17,4): error C2043: break가 잘못되었습니다.
