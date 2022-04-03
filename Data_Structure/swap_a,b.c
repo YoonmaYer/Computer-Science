@@ -9,5 +9,5 @@ void swap(int*a_a,int*b_a){
 void main(){
 	int a=10, b=20;
 	swap(&a,&b);
-	printf("%d %d",a,b);
+	printf("%d %d",a,b); // 20, 10
 }

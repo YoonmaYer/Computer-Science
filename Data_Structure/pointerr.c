@@ -15,6 +15,8 @@ void main()
 	 
 	(*ptr)++;
 	printf("포인터 ptr이 가리키는 값:%d\n",*ptr);
-	printf("num에 저장된 값:%d\n\n",num); // 10 
+	printf("num에 저장된 값:%d\n\n",num); // 21
 	
 }
+
+// 포인터 변수는 어떠한 변수의 주소를 담기위한 변수 
