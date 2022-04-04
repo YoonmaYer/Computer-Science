@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct ListNode {
-	int data;
-	struct ListNode *link;
-}; ListNode;
+struct NODE {
+	int year;
+	struct NODE *link
+};
 
-ListNode *p1;
-p1 = (ListNode *)malloc(sizeof(ListNode));
-
-p1->data = 10;
-p1->link = NULL;
-
-printf(*p1);
+int main(void)
+{
+	int sel;
+	
+	while (1)
+	{
+		printf("1. 노드 추가\n");
+		printf("2. 노드 삭제\n");
+		printf("3. 노드 검색\n");
+		printf("4. 노드 출력\n");
+		printf("5. 종료\n");
+		pritnf("=================\n");
+		scanf("%d, &sel") // 사용자 선택 
+		
+	}
+	return 0;
+ } 
+ 
