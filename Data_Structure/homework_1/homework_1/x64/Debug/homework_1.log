@@ -1,0 +1,7 @@
+﻿  homework_1.cpp
+homework_1.obj : error LNK2019: "void __cdecl add(void)" (?add@@YAXXZ)"int __cdecl Main(void)" (?Main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+homework_1.obj : error LNK2019: "void __cdecl del(void)" (?del@@YAXXZ)"int __cdecl Main(void)" (?Main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+homework_1.obj : error LNK2019: "void __cdecl search(void)" (?search@@YAXXZ)"int __cdecl Main(void)" (?Main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+homework_1.obj : error LNK2019: "void __cdecl print(void)" (?print@@YAXXZ)"int __cdecl Main(void)" (?Main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+MSVCRTD.lib(exe_main.obj) : error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\ASUS\Desktop\코딩\CS\Computer-Science\Data_Structure\homework_1\x64\Debug\homework_1.exe : fatal error LNK1120: 5개의 확인할 수 없는 외부 참조입니다.
