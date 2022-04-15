@@ -9,7 +9,7 @@ if name == "":
 
 question = input('무엇에 대하여 알고 싶은가요?')
 
-print(name, "님", question, "에 괸하여 질문을 주셨군요.")
+print(name, "님", question, "에 관하여 질문을 주셨군요.")
 print("운명의 주사위를 굴려볼게요...")
 
 answer = random.randint(1, 8)
