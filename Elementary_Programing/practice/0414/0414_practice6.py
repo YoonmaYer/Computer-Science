@@ -1,5 +1,4 @@
 # 사용자가 질문을 하면 운세를 점치는 프로그램을 작성해보자
-
 import sys
 import random
 
