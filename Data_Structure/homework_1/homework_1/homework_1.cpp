@@ -50,56 +50,51 @@ int Main() {
 class Singlist {
 
 public:
-	/*리스트 생성, 헤드노드 */
+	
 	HeadNode* createList() {
-		HeadNode* H = new HeadNode; // HeadNode를 가리키는 포인터, H
+		HeadNode* H = new HeadNode;
 		H->head = NULL;
 		return H;
 	}
 
-	/* 리스트의 마지막에 노드 삽입*/
 	void add(HeadNode* H, int x) {
-		Node* NewNode = new Node;  //새로 만들 노드 
-		Node* LastNode; //원래 있던 노드의 마지막 노드
+		Node* NewNode = new Node; 
+		Node* LastNode;
 		NewNode->data = x;
 		NewNode->link = NULL;
 
-		if (H->head == NULL) { // 리스트가 비어있을 경우
+		if (H->head == NULL) {
 			H->head = NewNode;
 			return; 
 		}
 
-		LastNode = H->head;   // 리스트가 비어있지 않은 경우에 연결리스트의 가장 처음 노드가 LastNode를 가리키게 한다.
-		while (LastNode->link != NULL) LastNode = LastNode->link; // 연결리스트의 마지막 노드를 찾는 과정
-		LastNode->link = NewNode; // 마지막 노드를 찾고 while문을 나오면 뒤에 새 노드를 가리키게 한다.
+		LastNode = H->head;
+		while (LastNode->link != NULL) LastNode = LastNode->link;
+		LastNode->link = NewNode;
 	}
 
-	/* 리스트의 마지막 노드 삭제*/
 	void del(HeadNode* H) {
-		Node* prevNode;  // 삭제되는 노드의 앞 노드
-		Node* delNode;  // 삭제되는 노드
+		Node* prevNode;
+		Node* delNode;
 
-		if (H->head == NULL) return; // 리스트가 빈 경우
-		if (H->head->link == NULL) { // 한 개의 노드만 가진 경우
-			delete H->head;  // head가 가리키던 메모리 공간을 힙 영역에 반환
-			H->head = NULL;  // 헤드 노드의 link 부분인 head를 null로 설정.
+		if (H->head == NULL) return;
+		if (H->head->link == NULL) {
+			delete H->head;
+			H->head = NULL;
 			return;
 		}
-		else {  // 리스트에 노드 여러 개 있는 경우
-			prevNode = H->head; // 헤드 노드가 가리키는 노드가 prevNode가 되게 설정
-			delNode = H->head->link; // prevNode 다음 위치로 delNode 설정
-			while (delNode->link != NULL) { //delNode가 마지막노드가 될 때까지
-				prevNode = delNode;       // prevNode를 한칸씩 가고
-				delNode = prevNode->link; // delNode도 한칸씩 끝으로 간다.
+		else {
+			prevNode = H->head;
+			delNode = H->head->link;
+			while (delNode->link != NULL) {
+				prevNode = delNode;
+				delNode = prevNode->link;
 			}
-			free(delNode);  // 마지막 노드의 메모리 공간을 반환
+			free(delNode);
 			prevNode->link = NULL;
 		}
 	}
 
-
-
-	/* 리스트의 특정 노드 검색*/
 	void search(HeadNode* H, int thisdata) {
 		Node* someNode;
 		someNode = H->head;
@@ -110,9 +105,7 @@ public:
 		cout << thisdata << " 데이터를 검색하는 데 성공했습니다." << endl;
 	}
 
-	/* 연결리스트 출력*/
 	void print(HeadNode* L) {
-		//노드 순서대로 리스트 출력
 		Node* p;
 		cout << "연결리스트 목록 = ( ";
 		p = L->head;
